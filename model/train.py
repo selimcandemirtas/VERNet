@@ -6,7 +6,7 @@ import torch.optim as optim
 import torch.nn.functional as F
 from tqdm import tqdm
 from torch.autograd import Variable
-from transformers import *
+from transformers import AutoTokenizer, AutoModel, AdamW, get_linear_schedule_with_warmup
 
 from models import inference_model
 from data_loader import DataLoader
